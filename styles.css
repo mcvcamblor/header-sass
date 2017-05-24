@@ -1,0 +1,33 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fffbf5;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1px;
+  font-style: italic;
+}
+
+header {
+  margin-top: 0;
+}
+
+.desplegable {
+  align-items: center;
+  background-color: #1fc8db;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%; }
