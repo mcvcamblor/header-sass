@@ -2,22 +2,49 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Ejemplo menú</title>
+    <title>hamburger menú</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
   </head>
+
   <body>
+
     <header>
-      <div class="desplegable">
-        <h1>Header</h1>
-        <img src="img/hamburger-menu.png" class="js-btn-menu">
-        <ul class="nav-bigscreens">
-          <li>Opcion1</li>
-          <li>Opcion2</li>
-          <li>Opcion3</li>
-          <li>Opcion4</li>
+      <a href="#">Desplegable</a>
+
+      <div class="nav-bar">
+        <button type="button" class="js-btn-menu" name="button">
+          <img src="menu-burger.png" alt="burger-logo">
+        </button>
+
+        <ul class="nav-bigscreen" desplegable>
+          <li>Todo el tiempo del mundo</li>
+          <li>Danzad Malditos</li>
+          <li>Eroski Paraiso</li>
+          <li>El Cartógrafo</li>
+        </ul>
+      </div>
+
+      <div class="nav-dropdown-menu hidden"desplegable hidden>
+        <ul class="center">
+          <li>Todo el tiempo del mundo</li>
+          <li>Danzad Malditos</li>
+          <li>Eroski Paraiso</li>
+          <li>El Cartógrafo</li>
         </ul>
       </div>
     </header>
+
+    <div class="text">
+      <h1>Teatro</h1>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
 <script src="main.js" charset="utf-8"></script>
+
   </body>
 </html>
