@@ -1,15 +1,32 @@
-
 * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 body {
-  color: #fffbf5;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 16px;
+  font-family: sans-serif;
+  font-size: 15px;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
+
+header {
+  display: flex;
+  position: relative;
+  background-color: #fabada;
+  margin-top: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
 
 .center {
   text-align: center;
@@ -17,17 +34,54 @@ body {
 
 h1 {
   font-size: 1px;
-  font-style: italic;
+  font-style: oblique;
 }
 
-header {
-  margin-top: 0;
+.js.btn-menu {
+  background-color: blue;
+  width: 10px;
+  padding: 0;
+  display: none;
+  border: none;
 }
 
-.desplegable {
+.nav-small {
   align-items: center;
   background-color: #1fc8db;
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  width: 100%; }
+  width: 90%;
+}
+
+@media (max-width: 480px) {
+  .nav-small {
+    display: none; } }
+.nav-small hidden {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 200px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0;
+  background-color: #fabada;
+  opacity: 0;
+}
+
+.hidden {
+  opacity: 1;
+}
+
+.text {
+  font-size: 10px;
+  font-family: fantasy;
+}
